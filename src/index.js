@@ -4,6 +4,7 @@
 //  Select the following single elements from the div.card
 
 // A- finding across the entire DOM
+// FINISHED
 const header = document.querySelector('header');
 const logoTitle = document.querySelector('#logoTitle');
 const firstCard = document.querySelector('.card')
@@ -18,6 +19,7 @@ const link2FirstCard = link1FirstCard.nextElementSibling;
 
 
 // 👉 2- Finding collections of elements in the DOM
+// FINISHED
 // A- Find all the anchor tags inside the nav element
 const navItems = document.querySelectorAll('nav a');
 // B- Loop over the links and console.log their text content
@@ -25,29 +27,42 @@ function printContent(element) {
     console.log(element.textContent);
 }
 navItems.forEach(printContent);
+
 // C- Turn the collection of links into a real array
+// FINISHED
 const navItemsArr = Array.from(navItems);
+
 // D- Use .filter to find the anchor tag with the textContent of "Home"
+// FINISHED
 const home = navItemsArr.filter(element => element.textContent === "Home")[0];
 
 
 // 👉 3- Changing an element's text content
 //  A- Change the cat-related content into dog-related content
+// FINISHED
 titleFirstCard.textContent = 'Dog';
+
 //  B- Have the students research online the difference between textContent and innerText
+// FINISHED
+// innerText allows you to add HTML tags but is unsecure
 
 
 
 // 👉 4- Changing any property
 //  A- Using dot notation to change a few attributes
+// FINISHED
 logoTitle.className = 'logo heading banana';
+
 //  B- Using .setAttribute to change a few attributes
 
 
 // 👉 5- Changing the styling of an element
 //  A- By changing the class names on the element with the classList API
+// FINISHED
 logoTitle.classList.add('white-text')
+
 //  B- By manipulating inline styles on the element
+// FINISHED
 header.style.background = 'pink';
 
 
