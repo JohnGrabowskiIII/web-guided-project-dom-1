@@ -52,9 +52,11 @@ titleFirstCard.textContent = 'Dog';
 //  A- Using dot notation to change a few attributes
 // FINISHED
 logoTitle.className = 'logo heading banana';
+logoTitle.setAttribute('class', 'new class names');
 
 //  B- Using .setAttribute to change a few attributes
-
+// FINISHED
+imageFirstCard.setAttribute('src', 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg')
 
 // 👉 5- Changing the styling of an element
 //  A- By changing the class names on the element with the classList API
@@ -68,6 +70,11 @@ header.style.background = 'pink';
 
 // 👉 6- Creating new elements from scratch and appending them
 // Create a new link inside the nav for "Blog"
+const nav = document.querySelector('nav');
+const blogMenuItem = document.createElement('a');
+blogMenuItem.classList.add('menu-item');
+blogMenuItem.setAttribute('href', '#');
+blogMenuItem.textContent = 'Blog';
 
 
 // 👉 7- Making a copy of the card and appending it to the card group
