@@ -11,7 +11,7 @@ const firstCard = document.querySelector('.card')
 const imageFirstCard = document.querySelector('div.card img');
 const titleFirstCard = document.querySelector('.card-title');
 const subtitleFirstCard = document.querySelector('.card-subtitle');
-const textFirstCard = document.querySelector('card-text');
+const textFirstCard = document.querySelector('.card-text');
 // C- traversing with dot notation
 const link1FirstCard = textFirstCard.nextElementSibling;
 const link2FirstCard = link1FirstCard.nextElementSibling;
